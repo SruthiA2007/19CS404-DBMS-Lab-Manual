@@ -23,7 +23,7 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 
 ### ER Diagram:
 *Paste or attach your diagram here*  
-![ER Diagram](er_diagram_fitness.png)
+
 <img width="1186" height="710" alt="image" src="https://github.com/user-attachments/assets/bcbafe88-7c3c-4502-85fe-d02832c6a6f9" />
 
 
@@ -72,7 +72,7 @@ The Central Library wants to manage book lending and cultural events.
 
 ### ER Diagram:
 *Paste or attach your diagram here*  
-![ER Diagram](er_diagram_library.png)
+
 <img width="876" height="648" alt="image" src="https://github.com/user-attachments/assets/ff438bd9-01b7-460f-a93f-323d3cb77ffa" />
 
 
@@ -118,7 +118,7 @@ A popular restaurant wants to manage reservations, orders, and billing.
 
 ### ER Diagram:
 *Paste or attach your diagram here*  
-![ER Diagram](er_diagram_restaurant.png)
+
 <img width="770" height="695" alt="image" src="https://github.com/user-attachments/assets/a5e4d16d-840c-44dd-911d-61eb2e9582b7" />
 
 
@@ -139,7 +139,7 @@ A popular restaurant wants to manage reservations, orders, and billing.
 |place|	1:M	|Customer (Partial), Order (Total)|	A customer can place many orders; each order belongs to exactly one customer.|
 |receive	|M:1|	Order (Total), Restaurant (Partial)	|Each order is received by exactly one restaurant, while a restaurant can receive many orders.|
 |have	|M:1	|Reservation (Total), Restaurant (Partial)	|Each reservation is made at exactly one restaurant, while a restaurant can have many reservations.|
-|associated_with|	1:1	|Both Total	Each order is associated with exactly one delivery record, and each delivery belongs to one order.|
+|associated_with|	1:1	|Both Total|	Each order is associated with exactly one delivery record, and each delivery belongs to one order.|
 
 ### Assumptions
 - A customer may exist without making a reservation or placing an order.
