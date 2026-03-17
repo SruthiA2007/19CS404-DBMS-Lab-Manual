@@ -51,6 +51,7 @@ BEGIN
 END;
 ```
 **Output**
+
 <img width="599" height="251" alt="image" src="https://github.com/user-attachments/assets/b59a1b53-cb79-43b5-9c91-d57927ef6cbc" />
 
 
@@ -123,6 +124,7 @@ BEGIN
 END;
 ```
 **Output**
+
 <img width="570" height="232" alt="image" src="https://github.com/user-attachments/assets/4c384fa8-d869-4b63-915c-707dc5743976" />
 
 ## 4. Write a PL/SQL Program to display the number in Reverse Order
