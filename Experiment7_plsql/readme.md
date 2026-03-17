@@ -157,6 +157,7 @@ BEGIN
 END;
 ```
 **Output**
+
 <img width="550" height="215" alt="image" src="https://github.com/user-attachments/assets/4ab47c30-2d37-492e-ab6d-01bcbcec5df3" />
 
 ## 5. Write a PL/SQL program to find the largest of three numbers
@@ -193,6 +194,7 @@ BEGIN
 END;
 ```
 **Output**
+
 <img width="544" height="256" alt="image" src="https://github.com/user-attachments/assets/85518e2f-c75d-482b-bd33-145e17a331dc" />
 
 ## RESULT
