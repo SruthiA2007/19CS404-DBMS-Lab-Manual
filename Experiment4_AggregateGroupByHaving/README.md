@@ -38,123 +38,170 @@ HAVING condition;
 
 **Question 1**
 --
--- Paste Question 1 here
+-- <img width="577" height="385" alt="image" src="https://github.com/user-attachments/assets/7f065408-2300-451a-b259-d870108f1917" />
 
-```sql
--- Paste your SQL code below for Question 1
+
+```python
+select Medication, count(*) as TotalPrescriptions
+from Prescriptions
+group by Medication;
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="583" height="593" alt="image" src="https://github.com/user-attachments/assets/73a47a6d-c2cd-4706-a0a8-cc68da7c3f65" />
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="508" height="503" alt="image" src="https://github.com/user-attachments/assets/7b14ceeb-7a0e-43c2-a21a-0ea9ce53906c" />
+
 
 ```sql
--- Paste your SQL code below for Question 2
+select strftime('%H',AppointmentDateTime) AS HourOfDay,
+count(*) as TotalAppointments
+from Appointments
+group by HourOfDay
+order by HourOfDay;
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="581" height="391" alt="image" src="https://github.com/user-attachments/assets/8fc7fd54-5bd0-4912-a234-b68b17c6def1" />
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="579" height="377" alt="image" src="https://github.com/user-attachments/assets/6d5178a9-1bda-4e39-8a93-c7bb12edaeab" />
+
 
 ```sql
--- Paste your SQL code below for Question 3
+select InsuranceCompany, count(DISTINCT PatientID) as TotalExpiredPatients
+from Insurance
+where substr(ValidityPeriod, instr(ValidityPeriod,'to')+3)<'2025-10-16'
+group by InsuranceCompany
+order by InsuranceCompany;
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="470" height="413" alt="image" src="https://github.com/user-attachments/assets/27952fda-78f0-4ae5-a24d-32422bddfaf2" />
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="579" height="500" alt="image" src="https://github.com/user-attachments/assets/db675bd6-ad6a-4927-9a72-cf5fa2e12691" />
+
 
 ```sql
--- Paste your SQL code below for Question 4
+select Min(purch_amt) as MINIMUM
+from orders;
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="364" height="260" alt="image" src="https://github.com/user-attachments/assets/ac93ef9b-68ae-4684-b98f-7f203e5252f1" />
+
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="582" height="371" alt="image" src="https://github.com/user-attachments/assets/826c6d00-5b98-41f3-aa16-5bff6d0164a5" />
+
 
 ```sql
--- Paste your SQL code below for Question 5
+select count(distinct city) as
+unique_cities
+from customer;
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="438" height="261" alt="image" src="https://github.com/user-attachments/assets/d056c680-7700-4afe-9a71-34a59044ce64" />
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+<img width="460" height="397" alt="image" src="https://github.com/user-attachments/assets/2c1583df-b7df-4e8b-9d75-205223738580" />
+
 
 ```sql
--- Paste your SQL code below for Question 6
+select name, length(name) as length
+from customer
+order by length desc
+limit 1;
 ```
 
 **Output:**
+<img width="578" height="259" alt="image" src="https://github.com/user-attachments/assets/911a4cc0-6f5c-4f81-8a88-75147ec20764" />
 
-![Output6](output.png)
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="584" height="338" alt="image" src="https://github.com/user-attachments/assets/b653838a-9b77-43a2-957d-bf0a5fae6f12" />
+
 
 ```sql
--- Paste your SQL code below for Question 7
+select avg(income) as avg_income
+from employee
+where name like 'A%';
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="340" height="257" alt="image" src="https://github.com/user-attachments/assets/ca879e08-c9d4-419e-afe5-c533f4c29ca6" />
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="577" height="262" alt="image" src="https://github.com/user-attachments/assets/a3776fdc-8af8-409e-8ac5-20369d1dc52f" />
+
 
 ```sql
--- Paste your SQL code below for Question 8
+select category_id, 
+sum(price*category_id) as Revenue
+from products
+group by category_id
+having sum(price*category_id)>25;
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="543" height="359" alt="image" src="https://github.com/user-attachments/assets/6608fa55-521c-4dab-9adc-fa9641a13f0d" />
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="585" height="243" alt="image" src="https://github.com/user-attachments/assets/ab5d602b-697c-4a70-a82e-a83ca62275b0" />
+
 
 ```sql
--- Paste your SQL code below for Question 9
+select age, min(income) as 'MIN(income)'
+from employee
+group by age
+having income<400000;
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="534" height="324" alt="image" src="https://github.com/user-attachments/assets/987cf2d9-5220-4181-bd73-c6bc1c8dfdc2" />
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="585" height="228" alt="image" src="https://github.com/user-attachments/assets/a5ee5a10-58fb-4c4e-9d13-4c2f4743dcb3" />
+
 
 ```sql
--- Paste your SQL code below for Question 10
+select (age/5)*5 as age_group,
+AVG(age) from customer1
+group by age_group 
+having AVG(age)<24;
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="520" height="264" alt="image" src="https://github.com/user-attachments/assets/5b0ed0d0-a1b1-460b-b033-5239111ed198" />
+
 
 
 ## RESULT
