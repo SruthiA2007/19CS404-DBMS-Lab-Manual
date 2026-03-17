@@ -99,7 +99,7 @@ END;
 **Output:**  
 The program should display the employee details or an error message.
 
-<img width="600" height="177" alt="image" src="https://github.com/user-attachments/assets/1a914efc-9ddb-432c-9d23-468e3a0c3db6" />
+<img width="496" height="146" alt="image" src="https://github.com/user-attachments/assets/2cfd8a2e-ad55-4c21-834a-70e38b06efb0" />
 
 
 
