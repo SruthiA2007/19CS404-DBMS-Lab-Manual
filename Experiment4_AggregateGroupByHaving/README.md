@@ -132,6 +132,7 @@ limit 1;
 ```
 
 **Output:**
+
 <img width="578" height="259" alt="image" src="https://github.com/user-attachments/assets/911a4cc0-6f5c-4f81-8a88-75147ec20764" />
 
 
