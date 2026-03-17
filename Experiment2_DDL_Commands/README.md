@@ -105,124 +105,190 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+<img width="590" height="126" alt="image" src="https://github.com/user-attachments/assets/af098adc-5854-4b21-a067-a9815a7afd4b" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+INSERT INTO Products(ProductId,Name,Category,Price,Stock)
+VALUES(101,'Laptop','Electronics',1500,50);
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="509" height="91" alt="image" src="https://github.com/user-attachments/assets/8ffa477a-9891-4afd-95f4-efbebaf4c2a6" />
+
+<img width="302" height="97" alt="image" src="https://github.com/user-attachments/assets/b8602a59-fb65-4652-8da4-57d2365d0d56" />
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="506" height="173" alt="image" src="https://github.com/user-attachments/assets/6391d0b3-8110-4cec-904b-be800b4126d4" />
+
 
 ```sql
--- Paste your SQL code below for Question 2
+CREATE TABLE Invoices(
+    InvoiceID INTEGER PRIMARY KEY,
+    InvoiceDate DATE,
+    DueDate DATE,
+    Amount REAL,
+    CHECK(DueDate>InvoiceDate),
+    CHECK(Amount>0)
+);
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="591" height="320" alt="image" src="https://github.com/user-attachments/assets/8c2461a4-4135-467c-a4e3-ff20e7dbc94f" />
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="585" height="226" alt="image" src="https://github.com/user-attachments/assets/da28fed2-3237-4555-91ec-400d8ef198d0" />
+
 
 ```sql
--- Paste your SQL code below for Question 3
+ALTER TABLE Companies
+RENAME COLUMN name TO first_name;
+ALTER TABLE Companies
+ADD mobilenumber number;
+ALTER TABLE Companies
+ADD DOB Date;
+ALTER TABLE Companies
+ADD State varchar(30);
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="588" height="483" alt="image" src="https://github.com/user-attachments/assets/8d7c86bd-3c9b-438a-8dbc-badaaff27d0b" />
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="574" height="295" alt="image" src="https://github.com/user-attachments/assets/bb5efbfc-953e-4dbb-a7ad-a0abe955f51f" />
+
 
 ```sql
--- Paste your SQL code below for Question 4
+INSERT INTO Student_details(RollNo,Name,Gender,Subject,MARKS)
+VALUES(202,'Ella King','F','Chemistry',87);
+INSERT INTO Student_details(RollNo,Name,Gender,Subject,MARKS)
+VALUES(203,'James Bond','M','Literature',78);
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="583" height="324" alt="image" src="https://github.com/user-attachments/assets/a9655af3-19aa-4608-9230-d9653d547363" />
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="583" height="280" alt="image" src="https://github.com/user-attachments/assets/798a2c25-2a01-45f4-989c-67c20f6f8e55" />
+
 
 ```sql
--- Paste your SQL code below for Question 5
+CREATE TABLE Products(
+    ProductID INTEGER,
+    ProductName TEXT,
+    Price REAL,
+    Stock INTEGER
+);
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="579" height="363" alt="image" src="https://github.com/user-attachments/assets/d6b6e3ec-04b0-42bc-89c2-5b85b26ec31a" />
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+<img width="582" height="204" alt="image" src="https://github.com/user-attachments/assets/37fabb06-1454-4fec-a500-63f3d72e4b53" />
+
 
 ```sql
--- Paste your SQL code below for Question 6
+ALTER TABLE Student_details
+ADD Date_of_birth Date;
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="576" height="427" alt="image" src="https://github.com/user-attachments/assets/01c32abd-cf86-4110-b722-b666d6dfdc6f" />
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="579" height="213" alt="image" src="https://github.com/user-attachments/assets/54ec016f-b0db-4815-9e35-d93571fa0d0d" />
+
 
 ```sql
--- Paste your SQL code below for Question 7
+INSERT INTO Books(ISBN, Title, Author, Publisher,YearPublished)
+SELECT ISBN, Title, Author, Publisher, YearPublished
+FROM Out_of_print_books;
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="581" height="317" alt="image" src="https://github.com/user-attachments/assets/6c0b027a-4102-4509-88d5-bb5a5e0057d1" />
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="581" height="152" alt="image" src="https://github.com/user-attachments/assets/7c91defa-c511-4158-b232-83363e5da584" />
+
 
 ```sql
--- Paste your SQL code below for Question 8
+CREATE TABLE Department(
+    DepartmentID INTEGER PRIMARY KEY,
+    DepartmentName TEXT UNIQUE NOT NULL,
+    Location TEXT
+    );
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="588" height="267" alt="image" src="https://github.com/user-attachments/assets/be2adfa9-4c9f-4b82-a22a-6896a27808b3" />
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="581" height="138" alt="image" src="https://github.com/user-attachments/assets/81ff9f76-7234-4ec0-b1fe-2311123e2716" />
+
 
 ```sql
--- Paste your SQL code below for Question 9
+CREATE TABLE Orders(
+    OrderID INTEGER PRIMARY KEY,
+    OrderDate DATE NOT NULL,
+    CustomerID INTEGER,
+    FOREIGN KEY (CustomerID) REFERENCES
+ Customers(CustomerID)
+);
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="588" height="328" alt="image" src="https://github.com/user-attachments/assets/bad98c72-f344-4f81-b08e-a0aa92584a3c" />
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="575" height="270" alt="image" src="https://github.com/user-attachments/assets/51589f8f-919b-4a4a-81fb-09c3d1774904" />
+
 
 ```sql
--- Paste your SQL code below for Question 10
+CREATE TABLE item(
+    item_id TEXT PRIMARY KEY,
+    item_desc TEXT,
+    rate INTEGER,
+    icom_id TEXT(4),
+    FOREIGN KEY(icom_id) REFERENCES
+company(com_id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
+);
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="581" height="151" alt="image" src="https://github.com/user-attachments/assets/1ed0d1fe-24de-4e41-babd-14914e8696af" />
 
+***RESULT***
+Thus, the SQL queries to implement different types of constraints and DDL commands have been executed successfully.
 
 ## RESULT
 Thus, the SQL queries to implement different types of constraints and DDL commands have been executed successfully.
