@@ -86,6 +86,7 @@ where ADDRESS = 'Delhi' AND AGE < 30);
 ```
 
 **Output:**
+
 <img width="579" height="174" alt="image" src="https://github.com/user-attachments/assets/af61ee76-ca85-473b-96fc-b128039d0a13" />
 
 
@@ -188,6 +189,7 @@ where ord_date='2012-10-10');
 ```
 
 **Output:**
+
 <img width="586" height="274" alt="image" src="https://github.com/user-attachments/assets/379cbd12-1ffc-462a-bf9f-cb18aea88027" />
 
 
